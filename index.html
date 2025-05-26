@@ -345,5 +345,26 @@
     <footer style="text-align:center; padding: 20px 0 10px 0; font-size: 14px;">
       © 2025 Víctor Aguilar - Contador Auditor. Todos los derechos reservados.
     </footer>
+
+    <!-- UF Widget -->
+    <div class="uf-widget">
+      <span id="uf-trigger" title="Haz clic para ver el valor de la UF">💲</span>
+      <div id="uf-box">UF: $39.154 CLP</div>
+    </div>
+
+    <script>
+      const trigger = document.getElementById("uf-trigger");
+      const box = document.getElementById("uf-box");
+
+      trigger.addEventListener("click", () => {
+        box.style.display = box.style.display === "block" ? "none" : "block";
+      });
+
+      document.addEventListener("click", function (e) {
+        if (!trigger.contains(e.target) && !box.contains(e.target)) {
+          box.style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>

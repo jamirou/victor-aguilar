@@ -848,3 +848,41 @@ h2 .title {
   max-width: 410px;
   position: relative;
 }
+
+.uf-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-family: "Montserrat", sans-serif;
+}
+
+#uf-trigger {
+  font-size: 24px;
+  cursor: pointer;
+  background: #f0f0f0;
+  color: #111;
+  padding: 10px 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease;
+}
+
+#uf-trigger:hover {
+  background: #e0e0e0;
+}
+
+#uf-box {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  background: #ffffff;
+  color: #000000;
+  padding: 10px 16px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 15px;
+}
